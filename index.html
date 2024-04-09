@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIT Map System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <form>
+      <h3>VIT Chennai Navigation System</h3>
+
+      <label for="userType">User Type</label>
+      <select id="userType">
+        <option value="none">--none--</option>
+        <option value="visitor">Visitor</option>
+        <option value="student">Student</option>
+        <option value="faculty">Faculty</option>
+      </select>
+
+      <label for="username">Username</label>
+      <input type="text" placeholder="Email or Phone" id="username" />
+
+      <label for="password">OTP</label>
+      <div class="password-container">
+        <input
+          type="password"
+          placeholder="Enter the 6 digit OTP here"
+          id="password"
+        />
+        <i class="fas fa-eye-slash" id="togglePassword"></i>
+      </div>
+
+      <button id="loginButton">Log In</button>
+
+      <div class="social">
+        <div class="go"><i class="fab fa-google"></i> Website</div>
+        <div class="fb"><i class="fas fa-map"></i> Full Map</div>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
