@@ -10,6 +10,6 @@ togglePassword.addEventListener('click', function () {
 
 document.getElementById('loginButton').addEventListener('click', function() {
     // Redirect to the new page
-    window.location.href = './Navigate/navigate.html';
+    window.location = 'https://shrey141102.github.io/MapSystem/Navigate/navigate.html';
   });
   

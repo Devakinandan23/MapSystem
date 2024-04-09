@@ -17,7 +17,7 @@ document.getElementById('submitBtn').addEventListener('click', function() {
 
 document.getElementById('submitBtn').addEventListener('click', function() {
     // Redirect to map.html
-    window.location.href = './Maps/map.html';
+    window.location = 'https://shrey141102.github.io/MapSystem/Maps/map.html';
 });
 
 
