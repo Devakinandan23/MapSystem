@@ -9,8 +9,6 @@ togglePassword.addEventListener('click', function () {
 });
 
 document.getElementById('loginButton').addEventListener('click', function() {
-    // Redirect to the new page
-
-    window.location.href = './Navigate/index.html';
+  window.location.href = "Navigate/index.html";
   });
   

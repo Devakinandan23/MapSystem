@@ -7,17 +7,8 @@ function initAutocomplete() {
 }
 
 document.getElementById('submitBtn').addEventListener('click', function() {
-    var from = document.getElementById('from').value;
-    var to = document.getElementById('to').value;
-
-    // You can perform further actions with the 'from' and 'to' values here
-    console.log('From:', from);
-    console.log('To:', to);
-});
-
-document.getElementById('submitBtn').addEventListener('click', function() {
     // Redirect to map.html
-    window.location = './Maps/index.html';
+    window.location.href = '../Maps/index.html';
 });
 
 
