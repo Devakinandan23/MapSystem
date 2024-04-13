@@ -28,20 +28,32 @@
       </select>
 
       <label for="username">Username</label>
-      <input type="text" placeholder="Email or Phone" id="username" autocomplete="email"/>
+      <input
+        type="text"
+        placeholder="Email or Phone"
+        id="username"
+        autocomplete="email"
+      />
 
-      <label for="password">OTP</label>
-      <div class="password-container">
+      <!-- <label for="password">OTP</label> -->
+      <!-- <div class="password-container">
         <input
           type="password"
           placeholder="Enter the 6 digit OTP here"
           id="password"
         />
         <i class="fas fa-eye-slash" id="togglePassword"></i>
-      </div>
+      </div> -->
 
-      <button id="loginButton">Log In</button>
-
+      <!-- <button id="loginButton">Log In</button> -->
+      <button class="loginButton">
+        <a
+          href="Navigate\index.html"
+          style="text-decoration: none; color: inherit"
+          >Log In</a
+        >
+      </button>
+      <!-- click on the login text to redirect -->
       <div class="social">
         <div class="go"><i class="fab fa-google"></i> Website</div>
         <div class="fb"><i class="fas fa-map"></i> Full Map</div>
