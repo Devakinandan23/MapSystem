@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,43 @@
     <title>Lets Gooo!</title>
   </head>
   <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2058.9707099462803!2d80.1532922386538!3d12.842560161979593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x3a5259af888ad1f5%3A0x97644f6646055611!2zVklUIFVuaXZlcnNpdHkgQWRtaW5pc3RyYXRpdmUgLyBNQkHigKYg4K614K6_4K6Q4K6f4K6_4oCm!3m2!1d12.8408571!2d80.1539548!4m5!1s0x3a52596570aca2d1%3A0x7b0a59f791122a5a!2sAcademic%20Block%203%2C%20ACADEMIC%20BLOCK%2C%20VIT%20UNIVERSITY%2C%20Tamil%20Nadu!3m2!1d12.8435127!2d80.15466959999999!5e1!3m2!1sen!2sin!4v1712686182643!5m2!1sen!2sin"></iframe>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./public/img/logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Lets Gooo!</title>
+</head>
+<body>
+  <iframe id="mapFrame" src=""></iframe>
+  <script>
+    // Function to extract link from query parameters
+    function getLinkFromQueryParams() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('link');
+    }
+
+    // Get the link from query parameters
+    const link = getLinkFromQueryParams();
+
+    // Update the src attribute of the iframe with the link
+    const mapFrame = document.getElementById("mapFrame");
+    if (link) {
+      mapFrame.src = decodeURIComponent(link);
+    } else {
+      // Handle case where no link is provided
+      console.error("No link provided in query parameters.");
+    }
+  </script>
+</body>
 </html>
+
+
 
 <!-- 
     <!DOCTYPE html>

@@ -8,7 +8,6 @@ togglePassword.addEventListener('click', function () {
   this.classList.toggle('fa-eye');
 });
 
-document.getElementById('loginButton').addEventListener('click', function() {
-  window.location.href = "Navigate/index.html";
-  });
-  
+// document.getElementById('loginButton').addEventListener('click', function() {
+//   window.location.href = "Navigate/index.html";
+//   });
