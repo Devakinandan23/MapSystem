@@ -30,6 +30,57 @@ var routes = [
     link: "https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1053.1819585865508!2d80.1523935912823!3d12.841077340318918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m3!3m2!1d12.840621299999999!2d80.15296099999999!4m5!1s0x3a5259007503af69%3A0x976b1c6f1bb5dcd8!2sR5V2%2B7PJ%20D1%20Block%20Hostel%2C%20Madurapakkam%2C%20Tamil%20Nadu%20600127!3m2!1d12.843621899999999!2d80.1521818!5e0!3m2!1sen!2sin!4v1713192525962!5m2!1sen!2sin",
   },
 
+    // Main Gate to all destinations
+    { from: "Main Gate", to: "Admin Block", link: "..." },
+    { from: "Main Gate", to: "AB1", link: "..." },
+    { from: "Main Gate", to: "AB2", link: "..." },
+    { from: "Main Gate", to: "AB3", link: "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d2058.9707099462803!2d80.1532922386538!3d12.842560161979593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x3a5259af888ad1f5%3A0x97644f6646055611!2zVklUIFVuaXZlcnNpdHkgQWRtaW5pc3RyYXRpdmUgLyBNQkHigKYg4K614K6_4K6Q4K6f4K6_4oCm!3m2!1d12.8408571!2d80.1539548!4m5!1s0x3a52596570aca2d1%3A0x7b0a59f791122a5a!2sAcademic%20Block%203%2C%20ACADEMIC%20BLOCK%2C%20VIT%20UNIVERSITY%2C%20Tamil%20Nadu!3m2!1d12.8435127!2d80.15466959999999!5e1!3m2!1sen!2sin!4v1712686182643!5m2!1sen!2sin" },
+    { from: "Main Gate", to: "A-Block", link: "..." },
+    { from: "Main Gate", to: "B-Block", link: "..." },
+    { from: "Main Gate", to: "C-Block", link: "..." },
+    // Admin Block to all destinations (excluding itself)
+{ from: "Admin Block", to: "AB1", link: "..." },
+{ from: "Admin Block", to: "AB2", link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1945.0112794435636!2d80.15363855621473!3d12.841818711974865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5259a5b3d18e69%3A0xd2af350ddd5b398d!2sAcademic%20Block%202!5e0!3m2!1sen!2sin!4v1714336777342!5m2!1sen!2sin" },
+{ from: "Admin Block", to: "AB3", link:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0110426674896!2d80.1519994099308!3d12.842562767643352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5259a5b3d18e69%3A0xd2af350ddd5b398d!2sAcademic%20Block%202!5e0!3m2!1sen!2sin!4v1714336886645!5m2!1sen!2sin"},
+{ from: "Admin Block", to: "A-Block", link: "..." },
+{ from: "Admin Block", to: "B-Block", link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1945.011908202482!2d80.15404375621472!3d12.841737461975734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5259adfd9cd407%3A0xf80bb4c59e55bf12!2sC%20Block%20Hostel!5e0!3m2!1sen!2sin!4v1714337738679!5m2!1sen!2sin" },
+{ from: "Admin Block", to: "C-Block", link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1945.011908202482!2d80.15415515621471!3d12.841737461975745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5259adfd9cd407%3A0xf80bb4c59e55bf12!2sC%20Block%20Hostel!5e0!3m2!1sen!2sin!4v1714336990352!5m2!1sen!2sin" },
+{ from: "Admin Block", to: "D-Block", link: "..." },
+
+// AB1 to all destinations (excluding itself)
+{ from: "AB1", to: "AB2", link: "https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d1945.0057961042621!2d80.15399495824316!3d12.842527263107602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e2!4m3!3m2!1d12.8430286!2d80.156232!4m3!3m2!1d12.8433918!2d80.153841!5e0!3m2!1sen!2sin!4v1713190004132!5m2!1sen!2sin" },
+{ from: "AB1", to: "AB3", link:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0110426674896!2d80.1519994099308!3d12.842562767643352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52596570aca2d1%3A0x7b0a59f791122a5a!2sAcademic%20Block%203!5e0!3m2!1sen!2sin!4v1714337562801!5m2!1sen!2sin"},
+{ from: "AB1", to: "A-Block", link: "..." },
+{ from: "AB1", to: "B-Block", link: "..." },
+{ from: "AB1", to: "C-Block", link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1945.011908202482!2d80.15415515621471!3d12.841737461975745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5259adfd9cd407%3A0xf80bb4c59e55bf12!2sC%20Block%20Hostel!5e0!3m2!1sen!2sin!4v1714337658671!5m2!1sen!2sin"},
+{ from: "AB1", to: "D-Block", link: "..." },
+
+// AB2 to all destinations (excluding itself)
+{ from: "AB2", to: "AB3", link: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0038947673706!2d80.1528559599308!3d12.843024567633341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52596570aca2d1%3A0x7b0a59f791122a5a!2sAcademic%20Block%203!5e0!3m2!1sen!2sin!4v1714337870543!5m2!1sen!2sin"},
+{ from: "AB2", to: "A-Block", link: "..." },
+{ from: "AB2", to: "B-Block", link: "..." },
+{ from: "AB2", to: "C-Block", link: "..." },
+{ from: "AB2", to: "D-Block", link: "..." },
+
+// AB3 to all destinations (excluding itself)
+{ from: "AB3", to: "A-Block", link: "..." },
+{ from: "AB3", to: "B-Block", link: "..." },
+{ from: "AB3", to: "C-Block", link: "..." },
+{ from: "AB3", to: "D-Block", link: "..." },
+{ from : "AB3", to: "AB2",link:"..."}
+
+// A-Block to all destinations (excluding itself)
+{ from: "A-Block", to: "B-Block", link: "..." },
+{ from: "A-Block", to: "C-Block", link: "..." },
+{ from: "A-Block", to: "D-Block", link: "..." },
+
+// B-Block to all destinations (excluding itself)
+{ from: "B-Block", to: "C-Block", link: "..." },
+{ from: "B-Block", to: "D-Block", link: "..." },
+
+// C-Block to D-Block
+{ from: "C-Block", to: "D-Block", link: "..." },
+
 
 ];
 
